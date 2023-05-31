@@ -31,7 +31,7 @@ module.exports = {
         },
         form: data,
         // Add the proxy here
-        proxy: "http://192.168.101.10:10005",
+        proxy: "http://192.168.101.10:10007",
         timeout: 10000,
         proxyTimeout: 5000,
       };
@@ -69,7 +69,7 @@ module.exports = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
       },
       body: data,
-      proxy: "http://192.168.101.10:10005",
+      proxy: "http://192.168.101.10:10007",
       timeout: 10000,
       proxyTimeout: 5000,
     };
@@ -102,7 +102,7 @@ module.exports = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
       },
       body: data,
-      proxy: "http://192.168.101.10:10005",
+      proxy: "http://192.168.101.10:10007",
       timeout: 10000,
       proxyTimeout: 5000,
     };
@@ -128,7 +128,7 @@ module.exports = {
         "bh-signature": bh_sign,
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
       },
-      proxy: "http://192.168.101.10:10005",
+      proxy: "http://192.168.101.10:10007",
       timeout: 10000,
       proxyTimeout: 5000,
     };
@@ -156,7 +156,7 @@ module.exports = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
       },
       body: data,
-      proxy: "http://192.168.101.10:10005",
+      proxy: "http://192.168.101.10:10007",
       timeout: 10000,
       proxyTimeout: 5000,
     };
@@ -176,7 +176,7 @@ module.exports = {
     const options = {
       method: "POST",
       url: "https://frens-api.streamr.network/send-confirmation-mail?campaign=634565c3ba638384ae7afd21",
-      proxy: "http://192.168.101.10:10005",
+      proxy: "http://192.168.101.10:10007",
       headers: {
         "bh-signature": bhSign,
         Authorization: `Bearer ${token}`,
@@ -202,7 +202,7 @@ module.exports = {
     const options = {
       method: "POST",
       url: "https://frens-api.streamr.network/User/avatar?avatar_number=1&campaign=634565c3ba638384ae7afd21",
-      proxy: "http://192.168.101.10:10005",
+      proxy: "http://192.168.101.10:10007",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`, 
@@ -257,7 +257,7 @@ module.exports = {
           "User-Agent":
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
         },
-        proxy: "http://192.168.101.10:10005",
+        proxy: "http://192.168.101.10:10007",
         timeout: 10000,
         proxyTimeout: 5000,
       };
@@ -278,7 +278,7 @@ module.exports = {
       var options = {
         method: "POST",
         url: "https://frens-api.streamr.network/jackpot?campaign=634565c3ba638384ae7afd21",
-        proxy: "http://192.168.101.10:10005",
+        proxy: "http://192.168.101.10:10007",
         timeout: 10000,
         proxyTimeout: 5000,
         headers: {

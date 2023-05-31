@@ -10,7 +10,7 @@ const {
   getConfirmLink,
   confirmRef,
   spinReward,
-} = require("../controllers/controllers");
+} = require("../controllers/controllers2");
 
 const {
   generateUser,
@@ -19,7 +19,7 @@ const {
 } = require("../utils/generateInfo");
 const { connectToMongoDB, addUser } = require("../utils/mongodb.connect");
 
-const refId = "6476e6fd0c7c48e4f6193a0d";
+const refId = "6476f22d0c7c48e4f6193afa";
 
 async function main() {
   const { userName, mailName, mailPass, mailObj } = await generateUser();
@@ -72,7 +72,6 @@ async function main() {
       accessToken.replace(/"/g, ""),
       getBhSign()
     );
-    console.log('sessionid', getSessionId);
     if (!getSessionId) {
       console.log("cannot get session id");
       return;
@@ -188,14 +187,12 @@ async function main() {
       const { slot_1, slot_2, slot_3 } = spinRs;
 
       if ((slot_1 === slot_2) === slot_3 && slot_1 <= 11) {
-        console.log("bingo got:", slot_1);
         const reward = slot_1;
         await connectToMongoDB();
         await addUser(userId, walletAddress, privateKey, mailName, mailPass, reward);
       }
       console.log("spinning turn:", spinRs);
     }
-
 
     process.exit();
   } catch (error) {
